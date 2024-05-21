@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('cpf');
+            $table->string('location');
+            $table->decimal('income', 10, 2);
+            $table->date('data_nasc');
             $table->rememberToken();
             $table->timestamps();
         });
